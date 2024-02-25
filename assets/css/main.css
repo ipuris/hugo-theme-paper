@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.article {
+    @apply py-16;
+}
+
+.article h1 {
+    @apply mb-12;
+    @apply text-5xl;
+    @apply font-medium;
+}
+
+.article h2 {
+    @apply mt-16;
+    @apply mb-6;
+    @apply text-3xl;
+    @apply font-medium;
+}
+
+.article h3 {
+    @apply mt-12;
+    @apply mb-4;
+    @apply text-2xl;
+    @apply font-medium;
+}
+
+.article h4 {
+    @apply mt-8;
+    @apply mb-2;
+    @apply text-xl;
+    @apply font-medium;
+}
+
+.article ol {
+    @apply list-decimal;
+    @apply list-inside;
+}
+
+.article ul {
+    @apply list-disc;
+    @apply list-inside;
+}
+
+.article code {
+    @apply px-1;
+    @apply py-0.5;
+    @apply text-xs;
+    @apply font-mono;
+    @apply rounded-sm;
+    @apply dark:bg-neutral-700;
+}
+
+.article pre {
+    @apply my-4;
+    @apply px-4;
+    @apply rounded-sm;
+}
+
+.article pre code {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    @apply dark:bg-inherit;
+}
+

@@ -1,10 +1,18 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <section class="max-w-md md:max-w-7xl mx-auto px-[2rem] md:px-[4rem]">
+    <article class="article">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+    
+    <aside>
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </aside>
+  </section>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <section>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  </section>
 {{ end }}
