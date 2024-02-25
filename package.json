@@ -1,0 +1,23 @@
+{
+  "name": "hugo-theme-paper",
+  "version": "0.0.1",
+  "description": "A simple and clean Hugo theme",
+  "scripts": {
+    "dev:tailwindcss": "tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.css -w --minify",
+    "dev": "npm run dev:tailwindcss",
+    "build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipuris/hugo-theme-paper.git"
+  },
+  "keywords": [
+    "hugo"
+  ],
+  "author": "Han Park",
+  "license": "MIT",
+  "homepage": "https://github.com/ipuris/hugo-theme-paper",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
