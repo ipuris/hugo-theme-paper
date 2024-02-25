@@ -1,0 +1,9 @@
+name = 'Paper'
+license = 'MIT'
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'A simple and clean theme'
+homepage = 'https://github.com/ipuris/hugo-theme-paper'
+
+[author]
+  name = 'Han Park'
+  homepage = 'https://hanpark.im'
